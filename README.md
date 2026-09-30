@@ -2,6 +2,16 @@
 
 **Machine Learning Engineering (CC3105)**, Universidad del Valle de Guatemala
 
+**Repositorio:** https://github.com/BiancaCalderon/ML-Taller2/tree/main
+
+**Integrantes:**
+- Francis Aguilar - 22243
+- Paula Barillas - 22764
+- Bianca Calderón - 22272
+- José Marchena - 22398
+- Gerardo Pineda - 22880
+- Mónica Salvatierra - 22249
+
 Taller para aprender a usar ambientes virtuales con `venv` y con Conda, definir archivos de requisitos para proyectos de Machine Learning e incluir esos requisitos en el paquete del pipeline de scikit-learn.
 
 ## Estructura
