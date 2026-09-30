@@ -1,0 +1,23 @@
+# Ambiente de Conda para el Taller 2 (equivalente a requirements.txt en pip)
+# Crear:      conda env create -f environment.yml
+# Activar:    conda activate taller2-ml
+# Exportar:   conda env export --from-history > environment.yml
+name: taller2-ml
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  # Mismas versiones que requirements-pipeline.txt
+  - numpy=2.2.6
+  - pandas=2.3.3
+  - scipy=1.15.3
+  - scikit-learn=1.7.2
+  - joblib
+  # Extras para exploración
+  - matplotlib
+  - jupyterlab
+  - ipykernel
+  - pip
+  # Sección pip: paquetes que se instalan desde PyPI o locales
+  - pip:
+      - -e ./transactions-pipeline

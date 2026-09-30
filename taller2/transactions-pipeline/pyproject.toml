@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=62.6"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transactions-pipeline-7cefdc"
+version = "0.1.0"
+description = "ML training pipeline package"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+# Las dependencias se leen de requirements.txt (ver [tool.setuptools.dynamic])
+dynamic = ["dependencies"]
+
+[project.scripts]
+transactions-pipeline = "transactions_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
